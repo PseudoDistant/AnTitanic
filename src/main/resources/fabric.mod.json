@@ -1,25 +1,26 @@
 {
   "schemaVersion": 1,
-  "id": "modid",
+  "id": "antititanic",
   "version": "${version}",
 
-  "name": "Example Mod",
-  "description": "This is an example description! Tell everyone what your mod is about!",
+  "name": "AntiTitanic",
+  "description": "Make boats actually usable",
   "authors": [
-    "Me!"
+    "FarlanderCraft"
   ],
   "contact": {
-    "homepage": "https://legacyfabric.net/",
-    "sources": "https://github.com/Legacy-Fabric/fabric-example-mod"
+    "homepage": "https://www.youtube.com/channel/UCNW_V3BfkWXcMtCEIGQyaBA",
+    "issues": "https://github.com/FarLanderCraft/MCProjectHotbreak/issues",
+    "sources": "https://github.com/FarLanderCraft/MCProjectHotbreak"
   },
 
   "license": "CC0-1.0",
-  "icon": "assets/modid/icon.png",
+  "icon": "assets/antititanic/icon.png",
 
   "environment": "*",
   "entrypoints": {
     "main": [
-      "net.fabricmc.example.ExampleMod"
+      "io.github.farlandercraft.antititanic.AntiTitanic"
     ]
   },
   "mixins": [
@@ -29,8 +30,5 @@
   "depends": {
     "fabricloader": ">=0.9.0",
     "minecraft": "1.8.9"
-  },
-  "suggests": {
-    "flamingo": "*"
   }
 }
