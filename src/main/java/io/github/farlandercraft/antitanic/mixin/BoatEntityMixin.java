@@ -1,4 +1,4 @@
-package io.github.farlandercraft.antititanic.mixin;
+package io.github.farlandercraft.antitanic.mixin;
 
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.vehicle.BoatEntity;

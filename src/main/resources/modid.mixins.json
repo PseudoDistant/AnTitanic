@@ -1,7 +1,7 @@
 {
   "required": true,
   "minVersion": "0.8",
-  "package": "io.github.farlandercraft.antititanic.mixin",
+  "package": "io.github.farlandercraft.antitanic.mixin",
   "compatibilityLevel": "JAVA_8",
   "mixins": [
     "BoatEntityMixin"

@@ -1,4 +1,4 @@
-# AntiTitanic
+# AnTitanic
 
 ## A mod that makes boats actually usable on Minecraft 1.8.9 and 1.7.10
 
