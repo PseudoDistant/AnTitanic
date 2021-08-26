@@ -20,7 +20,8 @@ public class BoatEntityMixin extends Entity {
 	// Make the boat not die when it hits a photon.
 	@Redirect(method = "tick()V", at = @At(value = "INVOKE", target = "Lnet/minecraft/entity/vehicle/BoatEntity;remove()V"))
 	public void BoatInject(BoatEntity boatEntity) {
-
+		this.velocityX *= 0.00005;
+		this.velocityZ *= 0.00005;
 	}
 	// Make the boat not spawn Wooden Pickaxe recipe when it hits a photon.
 	@Redirect(method = "tick", at = @At(value = "INVOKE", target = "Lnet/minecraft/entity/vehicle/BoatEntity;dropItem(Lnet/minecraft/item/Item;IF)Lnet/minecraft/entity/ItemEntity;"))
