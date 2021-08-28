@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "id": "antititanic",
+  "id": "antitanic",
   "version": "${version}",
 
-  "name": "AntiTitanic",
+  "name": "AnTitanic",
   "description": "Make boats actually usable",
   "authors": [
     "FarlanderCraft"
