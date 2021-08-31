@@ -59,7 +59,7 @@ public abstract class BoatEntityMixin extends Entity {
 						if (Math.sqrt(Math.pow(this.velocityX, 2) + Math.pow(this.velocityZ, 2)) >= 0.23D && AnTitanic.config.boatsDealDamage) {
 							if (true) {
 								world.createExplosion(this, this.x, this.y, this.z,
-										6 / 7.0f, true, true);
+										(float) (Math.sqrt(Math.pow(this.velocityX, 2) + Math.pow(this.velocityZ, 2)) - 0.15D) * 55, true, true);
 							} else {
 								entity.damage(DamageSource.thrownProjectile(this, this.rider),
 									((float) (Math.sqrt(Math.pow(this.velocityX, 2) + Math.pow(this.velocityZ, 2)) - 0.15D) * 55));
