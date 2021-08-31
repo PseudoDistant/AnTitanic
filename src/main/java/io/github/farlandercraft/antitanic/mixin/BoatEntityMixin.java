@@ -12,6 +12,7 @@ import net.minecraft.item.Items;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
+import net.minecraft.world.explosion.Explosion;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Overwrite;
 import org.spongepowered.asm.mixin.Shadow;
@@ -56,8 +57,14 @@ public abstract class BoatEntityMixin extends Entity {
 						entity.pushAwayFrom(this);
 					} else {
 						if (Math.sqrt(Math.pow(this.velocityX, 2) + Math.pow(this.velocityZ, 2)) >= 0.23D && AnTitanic.config.boatsDealDamage) {
-							entity.damage(DamageSource.GENERIC,
-								((float) (Math.sqrt(Math.pow(this.velocityX, 2) + Math.pow(this.velocityZ, 2)) - 0.15D) * 55));
+							if (true) {
+								world.createExplosion(this, this.x, this.y, this.z,
+										6 / 7.0f, true, true);
+							} else {
+								entity.damage(DamageSource.thrownProjectile(this, this.rider),
+									((float) (Math.sqrt(Math.pow(this.velocityX, 2) + Math.pow(this.velocityZ, 2)) - 0.15D) * 55));
+							}
+
 						}
 					}
 				}
