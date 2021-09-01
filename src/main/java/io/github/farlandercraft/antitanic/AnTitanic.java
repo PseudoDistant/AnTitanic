@@ -12,7 +12,7 @@ import java.nio.file.Paths;
 import java.util.Collections;
 
 public class AnTitanic implements ModInitializer {
-	public static AnTitanicConfig config = new AnTitanicConfig(true, false);
+	public static AnTitanicConfig config = new AnTitanicConfig(true, false, false);
 	public Gson daData = new GsonBuilder().setPrettyPrinting().setFieldNamingPolicy(FieldNamingPolicy.UPPER_CAMEL_CASE).create();
 	Path configPath = Paths.get("config/antitanic.json");
 

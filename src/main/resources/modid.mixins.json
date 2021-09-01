@@ -4,7 +4,9 @@
   "package": "io.github.farlandercraft.antitanic.mixin",
   "compatibilityLevel": "JAVA_8",
   "mixins": [
-    "BoatEntityMixin"
+    "BoatEntityMixin",
+    "LivingEntityMixin",
+    "AbstractMinecartEntityMixin"
   ],
   "injectors": {
     "defaultRequire": 1
