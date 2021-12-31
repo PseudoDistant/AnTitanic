@@ -8,6 +8,6 @@
 
 
 
-# This mod is for the Legacy Fabric Loader, there are no plans to port to Forge.
+# This mod is for the Legacy Rewoven Loader, there are no plans to port to Forge.
 # Any issues asking for a Forge port will be terminated on sight.
 # YOU HAVE BEEN WARNED!
